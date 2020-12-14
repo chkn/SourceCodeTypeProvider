@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net461;netstandard2.0</TargetFrameworks>
+		<OutputType>Library</OutputType>
+		<IsPackable>false</IsPackable>
+
+		<!-- Needed so that Sample can work when run locally -->
+		<OutputPath>..\typeproviders\fsharp41</OutputPath>		
+
+		<!-- Needed so we can package all deps next to TP assembly -->
+		<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="CSharpTypeProvider.fs" />
+	</ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="Microsoft.CodeAnalysis.CSharp.Workspaces" Version="3.8.0" />
+		<PackageReference Include="System.Reflection.MetadataLoadContext" Version="5.0.0" />
+	</ItemGroup>
+</Project>

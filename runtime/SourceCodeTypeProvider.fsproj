@@ -1,0 +1,21 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>netstandard2.0</TargetFrameworks>
+		<OutputType>Library</OutputType>
+		<BaseOutputPath>..\bin</BaseOutputPath>
+
+		<!-- Nuget packaging -->
+		<Version>1.1.3</Version>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<NoPackageAnalysis>true</NoPackageAnalysis>
+		<NuspecFile>..\SourceCodeTypeProvider.CSharp.nuspec</NuspecFile>
+		<NuspecProperties>version=$(Version);configuration=$(Configuration)</NuspecProperties>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Compile Include="AssemblyInfo.fs" />
+		<ProjectReference Include="..\design\SourceCodeTypeProvider.Design.fsproj">
+			<ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+		</ProjectReference>
+	</ItemGroup>
+</Project>

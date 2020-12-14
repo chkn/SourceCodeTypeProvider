@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2013/05/nuspec.xsd">
+	<metadata>
+		<id>SourceCodeTypeProvider.CSharp</id>
+		<version>$version$</version>
+		<authors>Alex Corrado</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<description>An F# type provider that uses Roslyn to compile and embed C# types directly into your F# assembly.</description>
+		<tags>F# FSharp C# CSharp source code type provider</tags>
+
+		<projectUrl>https://github.com/chkn/SourceCodeTypeProvider</projectUrl>
+		<repository type="git" url="https://github.com/chkn/SourceCodeTypeProvider.git" />
+	</metadata>
+	<files>
+		<file src="typeproviders/**/*.dll" target="typeproviders" />
+		<file src="bin/$configuration$/netstandard2.0/SourceCodeTypeProvider.dll" target="lib\netstandard2.0" />
+	</files>
+</package>

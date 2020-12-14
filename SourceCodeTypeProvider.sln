@@ -1,9 +1,11 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2012
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "SourceCodeTypeProvider", "SourceCodeTypeProvider.fsproj", "{F0B64BEE-BBAA-4A11-94F8-DBE1A9C04D11}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SourceCodeTypeProvider.Design", "design\SourceCodeTypeProvider.Design.fsproj", "{F0B64BEE-BBAA-4A11-94F8-DBE1A9C04D11}"
 EndProject
-Project("{f2a71f9b-5d33-465a-a702-920d77279786}") = "Sample", "Sample\Sample.fsproj", "{6484ECCD-9AFB-4F6C-86D4-0092D16A1F94}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "Sample", "sample\Sample.fsproj", "{8C18EC82-F6B4-4403-A0CE-649454252ED6}"
+EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "SourceCodeTypeProvider", "runtime\SourceCodeTypeProvider.fsproj", "{BAE92149-22E5-495E-B9BB-72C7BBBF20DE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +17,13 @@ Global
 		{F0B64BEE-BBAA-4A11-94F8-DBE1A9C04D11}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F0B64BEE-BBAA-4A11-94F8-DBE1A9C04D11}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F0B64BEE-BBAA-4A11-94F8-DBE1A9C04D11}.Release|Any CPU.Build.0 = Release|Any CPU
-		{6484ECCD-9AFB-4F6C-86D4-0092D16A1F94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6484ECCD-9AFB-4F6C-86D4-0092D16A1F94}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6484ECCD-9AFB-4F6C-86D4-0092D16A1F94}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6484ECCD-9AFB-4F6C-86D4-0092D16A1F94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C18EC82-F6B4-4403-A0CE-649454252ED6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C18EC82-F6B4-4403-A0CE-649454252ED6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C18EC82-F6B4-4403-A0CE-649454252ED6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C18EC82-F6B4-4403-A0CE-649454252ED6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BAE92149-22E5-495E-B9BB-72C7BBBF20DE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BAE92149-22E5-495E-B9BB-72C7BBBF20DE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BAE92149-22E5-495E-B9BB-72C7BBBF20DE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BAE92149-22E5-495E-B9BB-72C7BBBF20DE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
